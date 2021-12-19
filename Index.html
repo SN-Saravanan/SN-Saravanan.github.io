@@ -43,7 +43,7 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -147,6 +147,40 @@
         </div>
       </div>
     </div>
+
+    <section id="my-keyboards">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Keyboards</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Keychorn k2</h4>
+              <img src="img/keyboards/3.png" alt="Keychorn K3" class="keyboard-img">
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Womier RGB</h4>
+              <img src="img/keyboards/1.png" alt="Womier RGB" class="keyboard-img">
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Red Dragon</h4>
+              <img src="img/keyboards/2.png" alt="Red Dragon" class="keyboard-img">
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ffffff" fill-opacity="1"
         d="M0,224L48,218.7C96,213,192,203,288,213.3C384,224,480,256,576,256C672,256,768,224,864,218.7C960,213,1056,235,1152,245.3C1248,256,1344,256,1392,256L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -154,70 +188,6 @@
     </svg>
   </section>
   <!-- Akhir Project -->
-
-  <!-- Gallery -->
-  <section id="gallery">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col">
-          <h2>Gallery</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/1.png" alt="Gamabar 1" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/2.png" alt="Gamabar 2" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/3.png" alt="Gamabar 3" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/4.png" alt="Gamabar 4" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/5.png" alt="Gamabar 5" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/6.png" alt="Gamabar 6" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/7.png" alt="Gamabar 7" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/8.png" alt="Gamabar 8" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/9.png" alt="Gamabar 9" class="img-fluid gallery-img">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="#">
-            <img src="img/gallery/thumbnail/10.png" alt="Gamabar 10" class="img-fluid gallery-img">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Akhir Gallery -->
 
   <!-- Contact -->
   <section id="contact">
@@ -334,6 +304,15 @@
         .catch(error => console.error('Error!', error.message))
     });
   </script>
-</body>
 
+<script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+		max: 35,
+		speed: 400,
+    glare: true,
+	});
+</script>
+
+  </body>
 </html>
